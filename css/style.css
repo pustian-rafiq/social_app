@@ -16,7 +16,8 @@ nav {
   width: 160px;
   margin-left: 45px;
 }
-.nav-left {
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
 }
@@ -27,4 +28,44 @@ nav {
 .nav-left ul li img {
   width: 28px;
   margin: 0 15px;
+}
+.nav-user-icon {
+  margin-left: 30px;
+}
+.nav-user-icon img {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-box {
+  background: #efefef;
+  width: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+.search-box img {
+  width: 18px;
+}
+.search-box input {
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border: 0;
+}
+.online {
+  position: relative;
+}
+.online::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #41db51;
+  top: 0;
+  right: 0px;
 }
